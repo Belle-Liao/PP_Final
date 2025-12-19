@@ -80,7 +80,7 @@ It produces the 64x64 image `framebuffer.tga`, here I scaled it for better reada
 
 ### OpenMP
 ```sh
-git clone https://github.com/ssloy/tinyrenderer.git &&
+git clone https://github.com/Belle-Liao/PP_Final.git &&
 cd OpenMP &&
 cmake -Bbuild &&
 cmake --build build -j &&
@@ -89,7 +89,7 @@ build/tinyrenderer --mode [face|tile] obj/diablo3_pose/diablo3_pose.obj obj/floo
 
 ### Mulit-Threading
 ```sh
-git clone https://github.com/ssloy/tinyrenderer.git &&
+git clone https://github.com/Belle-Liao/PP_Final.git &&
 cd MultiThreading &&
 cmake -Bbuild &&
 cmake --build build -j &&
@@ -98,7 +98,7 @@ build/tinyrenderer <num_threads> --mode [face|tile] obj/diablo3_pose/diablo3_pos
 
 ### CUDA
 ```sh
-git clone https://github.com/ssloy/tinyrenderer.git &&
+git clone https://github.com/Belle-Liao/PP_Final.git &&
 cd CUDA &&
 cmake -Bbuild &&
 cmake --build build -j &&
