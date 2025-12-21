@@ -91,12 +91,12 @@ int main(int argc, char** argv) {
     for (int m=obj_start; m<argc; m++) {
         Model model(argv[m]);
         PhongShader shader(light, model);
-
+        
         // Start timing for rendering
         double render_start = CycleTimer::current_seconds();
 
         // Reset framebuffer and render based on mode
-        if (RenderMode::STREAM) {
+        if (render_mode == RenderMode::STREAM) {
             stream_renderer->init_framebuffer({177, 195, 209, 255});
             stream_renderer->render_triangles_batch(all_triangles, shader.l, Viewport);
             stream_renderer->download_framebuffer(framebuffer);
