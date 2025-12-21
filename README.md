@@ -102,7 +102,7 @@ git clone https://github.com/Belle-Liao/PP_Final.git &&
 cd CUDA &&
 cmake -Bbuild &&
 cmake --build build -j &&
-build/tinyrenderer obj/diablo3_pose/diablo3_pose.obj obj/floor.obj
+build/tinyrenderer <stream|tile> obj/diablo3_pose/diablo3_pose.obj obj/floor.obj
 ```
 
 The rendered image is saved to `framebuffer.tga`.
